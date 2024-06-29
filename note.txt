@@ -1,0 +1,67 @@
+cmd
+cd C:\Users\Live\Documents\machine_learning
+
+- - -
+
+> ambiente virtual
+
+instalar
+virtualenv venv
+
+subir 
+.\venv\Scripts\Activate
+
+criar
+python -m venv venv
+
+baixar
+deactivate
+
+- - -
+
+subir aplicacao
+flask --app app run --debug
+
+video tutorial para subir na digital ocean
+https://www.youtube.com/watch?v=mCXJV7aDAnk
+
+comando para deploy
+gunicorn --worker-tmp-dir /dev/shm app:app
+
+url temporaria
+https://orca-app-2-lv27x.ondigitalocean.app/
+
+
+- - -
+
+gitHub
+git add .
+git commit - m "commite explicacao"
+git push
+
+
+
+digital ocean - commands 
+
+Build Command
+None
+
+Run Command
+gunicorn --worker-tmp-dir /dev/shm app:app
+
+
+- - -
+
+> requirements.txt
+
+criar
+pip freeze > requirements.txt
+
+instalar dependencias a partir de requirements.txt
+pip install -r requirements.txt --force-reinstall
+
+
+- - -
+
+lista os arquivos filtrando pelos maiores
+dir /s /b /o-s | findstr /R "^.* [0-9][0-9]* " | more
