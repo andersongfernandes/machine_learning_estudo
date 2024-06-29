@@ -21,3 +21,13 @@ Thumbs.db
 
 # Ignorar arquivos de teste
 .coverage
+
+# Ignorar dados de entrada e saída
+data/
+output/
+
+# Ignorar checkpoints de notebooks
+.ipynb_checkpoints/
+
+# Ignorar o diretório assets
+assets/
